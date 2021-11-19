@@ -28,8 +28,10 @@ https://stackoverflow.com/questions/19377969/combine-two-columns-of-text-in-data
 https://stackoverflow.com/questions/23294658/asking-the-user-for-input-until-they-give-a-valid-response
 https://stackoverflow.com/questions/2847386/python-string-and-integer-concatenation
 https://stackoverflow.com/questions/4183506/python-list-sort-in-descending-order
-https://www.geeksforgeeks.org/python-pandas-series-dt-month/
 https://stackoverflow.com/questions/51684178/i-am-getting-a-syntax-error-return-outside-function
 
 This was also were I came to see how others have done it before.
 https://github.com/Aritra96/bikeshare-project/blob/master/bikeshare.py
+
+This site was particularly helpful when I needed clarity on extracting date time from month using pandas.
+https://www.geeksforgeeks.org/python-pandas-series-dt-month/
