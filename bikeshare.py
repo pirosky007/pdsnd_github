@@ -15,11 +15,7 @@ https://stackoverflow.com/questions/4183506/python-list-sort-in-descending-order
 https://www.geeksforgeeks.org/python-pandas-series-dt-month/
 https://stackoverflow.com/questions/51684178/i-am-getting-a-syntax-error-return-outside-function
 
-
 """
-
-
-
 
 import time
 import pandas as pd
@@ -30,7 +26,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 MONTH_DATA = ["january", "february", "march", "april", "may", "june", "all"]
 DAY_DATA = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "all"]
-              
+
 
 def get_filters():
     """
@@ -50,7 +46,6 @@ def get_filters():
             city  = CITY_DATA[name_of_city.lower()]
         else:
             print("Apologies, kindly input the correct city you want in the format i.e. ['Chicago', 'New Your City', 'Washington']")
-
 
         # TO DO: get user input for month (all, january, february, ... , june)
     name_of_month = ""
@@ -85,27 +80,25 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-    # to load data file into dataframe              
+    # to load data file into dataframe
     df = pd.read_csv(city)
 
-    # to change Start Time to datetime              
+    # to change Start Time to datetime
     df["Start Time"] = pd.to_datetime(df["Start Time"])
 
      # to create new columns month, day of the week, hour from Start Time
     df["month"] = df["Start Time"].dt.month
     df["name_of_day"] = df["Start Time"].dt.weekday_name
     df["hour"] = df["Start Time"].dt.hour
-              
 
     if month != "all":
         month = MONTH_DATA.index(month)
         df = df.loc[df["month"] == month]
-                    
+
         if day != "all":
             df = df.loc[df["name_of_day"] == day.title()]
 
     return df
-
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
@@ -121,14 +114,12 @@ def time_stats(df):
     common_day_of_the_week = df["name_of_day"].mode()[0]
     print("The most common day of week: " , common_day_of_the_week)
 
-
     # TO DO: display the most common start hour
     common_start_hour = df["hour"].mode()[0]
     print("The most common start hour is: " , common_start_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
 
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
@@ -151,7 +142,6 @@ def station_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
@@ -180,7 +170,7 @@ def user_stats(df, city):
     # TO DO: Display counts of user types
     user_types = df["User Type"].value_counts()
     print("The count of user types from the given fitered data is:" , user_types)
-    
+
     if city != "washington.csv":
         # TO DO: Display counts of gender
         gender = df["Gender"].value_counts()
@@ -211,7 +201,6 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-
 
 if __name__ == "__main__":
 	main()
