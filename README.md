@@ -1,5 +1,10 @@
 >**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
+
+### Author
+Peter Chibueze
+
+
 ### Date created
 Project was created on 25th October 2021 while the README file is created today 19th November 2021.
 
@@ -13,7 +18,12 @@ It imports data from csv files and compute descriptive statistics from the data.
 
 
 ### Files used
-The files used were washington.csv, new_york_city.csv, and chicago.csv files
+The files used were washington.csv, new_york_city.csv, and chicago.csv files containing data for the respective cities.
+
+### Technology Used to Develop Project
+The programming language used is Python.
+pandas, numpy and time were the libraries used.
+
 
 ### Credits
 The following were the pages I referred to in completing the project:
@@ -35,3 +45,7 @@ https://github.com/Aritra96/bikeshare-project/blob/master/bikeshare.py
 
 This site was particularly helpful when I needed clarity on extracting date time from month using pandas.
 https://www.geeksforgeeks.org/python-pandas-series-dt-month/
+
+
+### Appreciation
+I want to use this opportunity to appreciate and thank the reviewer who was extremely helpful in correcting and giving feedback in the course of completing the different projects in this program.
