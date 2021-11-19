@@ -1,28 +1,27 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+# Project Title
+Bikeshare Project
 
+## Project Overview & Description
+This Program explores US Bikeshare data using python programming language. This project is written for as part of project requirement for Programming for Data Science with Python Nanodegree Program, and is used to explore data related to Bikeshare in Chicago, New York City, and Washington cities.
 
-### Author
-Peter Chibueze
+The script imports data from .csv files and compute descriptive statistics from the data. It also takes in users' raw input to create an interactive experience in the terminal to present these statistics.
 
 
 ### Date created
 Project was created on 25th October 2021 while the README file is created today 19th November 2021.
 
-### Project Title
-Bikeshare Project
-
-### Description
-This Python script is written for as part of requirement for the second project of the Programming for Data Science with Python Nanodegree Program and is used to explore data related to Bikeshare in Chicago, New York City, and Washington cities.
-
-It imports data from csv files and compute descriptive statistics from the data. It also takes in users' raw input to create an interactive experience in the terminal to present these statistics.
-
+#### Author
+Peter Chibueze
 
 ### Files used
-The files used were washington.csv, new_york_city.csv, and chicago.csv files containing data for the respective cities.
+The data files used were washington.csv, new_york_city.csv, and chicago.csv files containing data for the respective cities.
 
-### Technology Used to Develop Project
-The programming language used is Python.
+### Built with
+The programming language used is Python v3.6 or higher
 pandas, numpy and time were the libraries used.
+
+### Running the Program
+You can run the python bikeshare.py script on the dedicated terminal to run this program. That was  the environment I used.
 
 
 ### Credits
